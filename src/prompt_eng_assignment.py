@@ -73,7 +73,7 @@ class ObjectCountTaskPipeline(adal.Component):
 # replace the system prompt with the best prompt based on score from adal flow
         system_prompt = adal.Parameter(
             data="""
-You are a helpful assistant that counts how many times a letter appears in the name of a country.When given a question, consider the full list of 195 widely recognized sovereign countries if no specific subset is provided. For each country, process the name by ignoring case and non-alphabetical characters, then determine the highest frequency with which any single letter appears in that name. After computing the counts for all countries, double-check that your selected country indeed has the maximum repeated letter count among all candidates. Finally, output the country’s name prefixed with a '$' symbol and nothing else.\n\nFor instance:\n• If the available countries are Dominica and Dominican Republic, and the most frequently repeated letter in 'Dominican Republic' appears more times than in 'Dominica', the correct output should be '$Dominican Republic'.\n• If the list includes Oman and Czechia, and the maximum letter repetition in 'Czechia' is higher than in 'Oman', then the final output should be '$Czechia' world. Your task is to determine which country has the same letter repeated the most in its name.
+You are a helpful assistant that counts how many times a letter appears in the name of a country.You will be given a question that asks for the country with the most repeated letter in its name.
 """,
             requires_opt=True,
             param_type=adal.ParameterType.PROMPT,
@@ -110,14 +110,14 @@ question = "What country has the same letter repeated the most in its name?"
 # Paste the system prompt with the best score from adal flow above 
 # dont need to run the below before autooptimizing the prompts 
 
-for model_name, config in model_configs.items():
-    print(f"\nRunning for model:{model_name}")
-    task_pipeline = ObjectCountTaskPipeline(**config)
-    answer = task_pipeline(question, id="model_name")
-    result[model_name]= answer
+        # for model_name, config in model_configs.items():
+        #     print(f"\nRunning for model:{model_name}")
+        #     task_pipeline = ObjectCountTaskPipeline(**config)
+        #     answer = task_pipeline(question, id="model_name")
+        #     result[model_name]= answer
 
 
-print(result)
+        # print(result)
 
 ########################################Below is the code for auto-optimizing the prompts########################################
 
@@ -238,9 +238,12 @@ def train(task_model_name="gpt_3_model", optimizer_model_name="gpt_o3_mini_model
             "few_shot_demos": optimized_demos
         }, f, indent=2, ensure_ascii=False)
 
-# try:
 
-#     train()
-# finally:
-#     log_file.close()
+######### comment the below code to run the task pipeline for each model configuration to test the system prompt #########
+
+try:
+
+    train()
+finally:
+    log_file.close()
 
