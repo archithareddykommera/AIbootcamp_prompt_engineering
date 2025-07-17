@@ -1,0 +1,79 @@
+{
+  "examples": [
+    {
+      "input": "Consider the full list of 195 widely recognized sovereign countries if no countries specified in the list.For example if countries in the list are India and Oman.What country has the same letter repeated the most in its name?",
+      "output": "'$India'",
+      "reasoning": "India has the letter 'i' repeated twice, which is more than Oman."
+    },
+    {
+      "input": "Consider the full list of 195 widely recognized sovereign countries if no countries specified in the list.For example if countries in the list are Ethiopia and Philippines. What country has the same letter repeated the most in its name?",
+      "output": "'$Philippines'",
+      "reasoning": "Philippines has the letter 'i' repeated three times, which is more than Ethiopia."
+    },
+    {
+      "input": "Consider the full list of 195 widely recognized sovereign countries if no countries specified in the list.For example if countries in the list are Dominica and Dominican Republic. What country has the same letter repeated the most in its name?",
+      "output": "'$Dominican Republic'",
+      "reasoning": "Dominican Republic has the letter 'i' repeated three times, which is more than Dominica."
+    },
+    {
+      "input": "Consider the full list of 195 widely recognized sovereign countries if no countries specified in the list.For example if countries in the list are Oman and Czechia. What country has the same letter repeated the most in its name?",
+      "output": "'$Czechia'",
+      "reasoning": "Czechia has the letter 'c' repeated twice, which is more than Oman."
+    },
+    {
+      "input": "Consider the full list of 195 widely recognized sovereign countries if no countries specified in the list. For example if countries in the list are Denmark and Djibouti. What country has the same letter repeated the most in its name?",
+      "output": "'$Djibouti'",
+      "reasoning": "Djibouti has the letter 'i' repeated twice, which is more than Denmark."
+    },
+    {
+      "input": "Consider the full list of 195 widely recognized sovereign countries if no countries specified in the list.For example if countries in the list are Cuba and Czechia. What country has the same letter repeated the most in its name?",
+      "output": "'$Czechia'",
+      "reasoning": "Czechia has the letter 'c' repeated twice, which is more than Cuba."
+    },
+    {
+      "input": "Consider the full list of 195 widely recognized sovereign countries if no countries specified in the list.For example if countries in the list are Sierra Leone and Czechia. What country has the same letter repeated the most in its name?",
+      "output": "'$Sierra Leone'",
+      "reasoning": "Sierra Leone has the letter 'e' repeated three times, which is more than Czechia."
+    },
+    {
+      "input": "Consider the full list of 195 widely recognized sovereign countries if no countries specified in the list.For example if countries in the list are Cuba and Serbia and Sierra Leone. What country has the same letter repeated the most in its name?",
+      "output": "'$Sierra Leone'",
+      "reasoning": "Sierra Leone has the letter 'e' repeated three times, which is more than Cuba and Serbia."
+    },
+    {
+      "input": "Consider the full list of 195 widely recognized sovereign countries if no countries specified in the list.For example if countries in the list are El Salvador and Czechia and Samoa and Philippines. What country has the same letter repeated the most in its name?",
+      "output": "'$Philippines'",
+      "reasoning": "Philippines has the letter 'i' repeated three times, which is more than El Salvador, Czechia, and Samoa."
+    },
+    {
+      "input": "Consider the full list of 195 widely recognized sovereign countries if no countries specified in the list.For example if countries in the list are India and Oman and Dominican Republic. What country has the same letter repeated the most in its name? ",
+      "output": "'$Dominican Republic'",
+      "reasoning": "Dominican Republic has the letter 'i' repeated three times, which is more than India and Oman."
+    },
+    {
+      "input": "Consider the full list of 195 widely recognized sovereign countries if no countries specified in the list.For example if countries in the list are Cuba and Czechia. What country has the same letter repeated the most in its name?",
+      "output": "'$Czechia'",
+      "reasoning": "Czechia has the letter 'c' repeated twice, which is more than Cuba."
+    },
+    {
+      "input": "Consider the full list of 195 widely recognized sovereign countries if no countries specified in the list.For example if countries in the list are Denmark and Djibouti. What country has the same letter repeated the most in its name?",
+      "output": "'$Djibouti'",
+      "reasoning": "Djibouti has the letter 'i' repeated twice, which is more than Denmark."
+    },
+    {
+      "input": "Consider the full list of 195 widely recognized sovereign countries if no countries specified in the list.For example if countries in the list are Sierra Leone and Czechiac. What country has the same letter repeated the most in its name?",
+      "output": "'$Sierra Leone'",
+      "reasoning": "Sierra Leone has the letter 'e' repeated three times, which is more than Czechiac."
+    },
+    {
+      "input": "Consider the full list of 195 widely recognized sovereign countries if no countries specified in the list.For example if countries in the list are Cuba and Serbia and Sierra Leone. What country has the same letter repeated the most in its name?",
+      "output": "'$Sierra Leone'",
+      "reasoning": "Sierra Leone has the letter 'e' repeated three times, which is more than Cuba and Serbia."
+    },
+    {
+      "input": "Consider the full list of 195 widely recognized sovereign countries if no countries specified in the list. For example if countries in the list are India and Oman and Dominican Republic. What country has the same letter repeated the most in its name? ",
+      "output": "'$Dominican Republic'",
+      "reasoning": "Dominican Republic has the letter 'i' repeated three times, which is more than India and Oman."
+    }
+  ]
+}
